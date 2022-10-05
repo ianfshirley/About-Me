@@ -4,12 +4,27 @@ body {
     text-align: center;
 }
 
+h1 {
+    font-size: 60px;
+}
 #bio {
     background-color: bisque;
+    line-height: 1.2;
+    font-size: 20px;
     border: 5px;
+    border-style: inset;
     border-color: #F0F8FF;
     padding: 1em;
-    margin: auto;
+    margin: 50px 100px 50px 100px;
+}
+
+#hey {
+    font-size: 30px;
+    padding: 15px;
+}
+
+.bio-p {
+    padding: 0.25em;
 }
 
 ul {
