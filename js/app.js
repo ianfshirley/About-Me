@@ -24,13 +24,9 @@ if (trueValue || falseValue) {
 let username = prompt('Hey, what is your name?');
 console.log(username);
 
-let likeStarWars = prompt('Do I like Star Wars?').toLowerCase();
+let pets = prompt('Do I have any pets?').toLowerCase();
 
-/*
-likeStarWars = likeStarWars.toLowerCase();
-console.log(likeStarWars);
-*/
 
-if(likeStarWars === 'yes' || likeStarWars === 'y') {
-  console.log("That's right, I do like Star Wars!");
+if(pets === 'yes' || pets === 'y') {
+  console.log("That's right, I have a dog named Ramen & a cat named Sushi");
 }
