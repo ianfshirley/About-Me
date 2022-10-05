@@ -11,6 +11,12 @@ h1 {
     color: rgb(29, 29, 92);
     font-family: Monaco, monospace;
 }
+
+h2 {
+    padding: 15px;
+}
+
+
 #bio {
     background-color: bisque;
     line-height: 1.2;
@@ -43,6 +49,27 @@ ol {
 
 }
 
+#top-ten {
+    background-color: bisque;
+    line-height: 1.2;
+    font-size: 18px;
+    border: 10px;
+    border-style: inset;
+    border-color: #88d1e0;
+    padding: 1em;
+    margin: 50px 20rem 50px 20rem;
+    
+}
+
+h3 {
+    font-size: 22px;
+    text-decoration: underline;
+}
+
 li {
-    padding: 1rem 1rem 0.5rem 1rem;
+    padding: 1rem 1rem 0 1rem;
+}
+
+sub {
+    font-size: 12px;
 }
