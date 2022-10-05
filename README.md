@@ -2,7 +2,12 @@
 
 ## About Me
 
-I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
+I've built an 'About Me' page, with a little bio about myself, a brief history of my work experience and education. The page also asks the user several questions about me, and they will try to guess the correct answers.
+The responses the user gets will depend on their answers to the prompts/questions.
+
+Today, I'm adding a bit more CSS styling, and adding 2 more questions with some more complex JS code, using arrays, loops and conditional statements.
+
+
 
 ### Author: Ian Shirley
 
@@ -13,5 +18,4 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 
 ### Reflections and Comments
 
-* Consider including the answers to your daily journal and submission questions here
-* This is also a good place to reflect on the tools and resources used and learned
+* 
