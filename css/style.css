@@ -1,4 +1,16 @@
 
+body {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+#bio {
+    background-color: bisque;
+    border: 5px;
+    border-color: #F0F8FF;
+    padding: 1em;
+    margin: auto;
+}
 
 ul {
     list-style-type: disc;
