@@ -60,4 +60,30 @@ if (bones === 'yes' || bones === 'y') {
   alert('Yes, I have broken 7 bones unfortunately');
 }
 
+
+// Add a 6th question to the guessing game that takes in a numeric input by prompting the user to guess a number.
+
+if number = prompt('Guess a number between 1 and 10. You have 4 attempts.');
+console.log(number);
+
+// Indicates through an alert if the guess is “too high” or “too low”.
+// response if too high
+// response if too low
+// response if correct
+// response if not a number
+// response if no guesses remaining
+
+
+
+// It should give the user exactly four opportunities to get the correct answer.
+
+
+// After all attempts have been exhausted, tell the user the correct answer. Consider using a loop of some sort.
+
+
+
+let attemptsRemaining = 4;
+let 
+
+
 alert('Thanks for checking out my page, ' + username + '!');
