@@ -51,12 +51,15 @@ function noKids() {
 }
 noKids();
 
-let states = prompt('Do you think I have traveled to all 50 states?').toLowerCase();
+function notAllStates() {
+  let states = prompt('Do you think I have traveled to all 50 states?').toLowerCase();
 
-if (states === 'no' || states === 'n') {
-  //console.log('Not even close, more like 10 or 15');
-  alert('Not even close, more like 10 or 15');
+  if (states === 'no' || states === 'n') {
+    //console.log('Not even close, more like 10 or 15');
+    alert('Not even close, more like 10 or 15');
+  }
 }
+notAllStates();
 
 let bones = prompt('Have I ever broken a bone?').toLowerCase();
 
