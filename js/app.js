@@ -63,8 +63,35 @@ if (bones === 'yes' || bones === 'y') {
 
 // Add a 6th question to the guessing game that takes in a numeric input by prompting the user to guess a number.
 
-if number = prompt('Guess a number between 1 and 10. You have 4 attempts.');
-console.log(number);
+let answer = 6;
+let tries = 4;
+let correct = false;
+while(!correct && tries >= 1){
+  let guess = parseInt(prompt('Guess a number'));
+  if(guess === answer){
+    alert(`You get the correct answer:    
+    ${answer}`)
+    correct = true;
+    // or break;
+  }
+  else if(tries === 1){
+    alert(`You've used all your gueses, here is the correct answer:    
+    ${answer}`)
+    break;
+  }
+  else{
+    tries--;
+    console.log('tries', tries);
+    if(guess > answer){
+      alert('number too high')
+    }else if(guess < answer){
+      alert('numnber too low')
+    }
+  }
+}
+
+
+
 
 // Indicates through an alert if the guess is “too high” or “too low”.
 // response if too high
