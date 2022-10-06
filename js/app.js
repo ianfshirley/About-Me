@@ -31,12 +31,15 @@ function twoPets() {
 }
   twoPets();
 
-let siblings = prompt('Do I have any siblings?').toLowerCase();
+function oneSister() {
+  let siblings = prompt('Do I have any siblings?').toLowerCase();
 
-if (siblings === 'yes' || siblings === 'y') {
-  //console.log('Yep, I have one sister who is 2 years older than me.');
-  alert('Yep, I have one sister who is 2 years older than me.');
+  if (siblings === 'yes' || siblings === 'y') {
+    //console.log('Yep, I have one sister who is 2 years older than me.');
+    alert('Yep, I have one sister who is 2 years older than me.');
+  }  
 }
+oneSister();
 
 let kids = prompt('Do I have any kids?').toLowerCase();
 
