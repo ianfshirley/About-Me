@@ -41,12 +41,15 @@ function oneSister() {
 }
 oneSister();
 
-let kids = prompt('Do I have any kids?').toLowerCase();
+function noKids() {
+  let kids = prompt('Do I have any kids?').toLowerCase();
 
-if (kids === 'no' || kids === 'n') {
-  //console.log('Correct! I have 3 nephews and that's plenty!');
-  alert('Correct! I have 3 nephews and that is plenty!');
+  if (kids === 'no' || kids === 'n') {
+    //console.log('Correct! I have 3 nephews and that's plenty!');
+    alert('Correct! I have 3 nephews and that is plenty!');
+  }
 }
+noKids();
 
 let states = prompt('Do you think I have traveled to all 50 states?').toLowerCase();
 
