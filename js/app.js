@@ -22,14 +22,14 @@ getUserName();
 //   //console.log(username);
 //   alert("Hi " + username + "!");
 // }
-
+function twoPets() {
   let pets = prompt('Do I have any pets?').toLowerCase();
-
   if (pets === 'yes' || pets === 'y') {
     //console.log("That's right, I have a dog named Ramen & a cat named Sushi");
     alert('That\'s right, I have a dog named Ramen & a cat named Sushi');
   }
-
+}
+  twoPets();
 
 let siblings = prompt('Do I have any siblings?').toLowerCase();
 
