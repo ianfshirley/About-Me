@@ -4,12 +4,12 @@
 function getUserName() {
   let username = prompt('Hey, what is your name?');
   //console.log(username);
-  alert("Hi " + username + "!");
+  alert('Hi ' + username + '!');
   return username;
 }
-getUserName();
+// getUserName();
 
-// let username = getUserName();
+let username = getUserName();
 
 // function getUserString() {
 //   let username = prompt('Hey, what is your name?');
@@ -29,7 +29,7 @@ function twoPets() {
     alert('That\'s right, I have a dog named Ramen & a cat named Sushi');
   }
 }
-  twoPets();
+twoPets();
 
 function oneSister() {
   let siblings = prompt('Do I have any siblings?').toLowerCase();
@@ -37,7 +37,7 @@ function oneSister() {
   if (siblings === 'yes' || siblings === 'y') {
     //console.log('Yep, I have one sister who is 2 years older than me.');
     alert('Yep, I have one sister who is 2 years older than me.');
-  }  
+  }
 }
 oneSister();
 
@@ -82,31 +82,31 @@ function guessNumber() {
     let guess = parseInt(prompt('Guess my favorite number. It is between 1 and 10, and you have 4 guesses.'));
     if(guess === answer){
       alert(`Correct! The answer is    
-      ${answer}!`)
+      ${answer}!`);
       correct = true;
     }
     else if(tries === 1){
       alert(`You've used all your gueses, here is the correct answer:    
-      ${answer}`)
+      ${answer}`);
       break;
     }
     else{
       tries--;
       console.log('tries', tries);
       if(guess > answer){
-        alert('number too high')
+        alert('number too high');
       }else if(guess < answer){
-        alert('number too low')
+        alert('number too low');
       }
     }
-  }  
+  }
 }
 guessNumber();
 
 function favSport() {
   let answers = ['basketball', 'snowboarding', 'ultimate frisbee'];
   let correctAnswer = false;
-  
+
   for(let i = 6; i >= 0; i--){
     if(i === 0){
       alert(`Nope! Sorry, the correct options were: ${answers}`);
@@ -119,17 +119,12 @@ function favSport() {
         }
       }
       if(correctAnswer === true){
-        alert('congrats!')
+        alert('congrats!');
         break;
       }
     }
-    
   }
-  
 }
 favSport();
-
-
-
 
 alert(`Thanks for checking out my page, ${username}!`);
