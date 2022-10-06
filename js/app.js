@@ -1,25 +1,5 @@
 'use strict';
 
-console.log('hi');
-
-let booleanValue = true;
-
-if (booleanValue) {
-  console.log('if condition is true this will print in the console');
-}
-
-/*
-&& is the 'logical and' - One false and it will not run.
-|| is the 'logical or' - One True and it will run.
-! is the 'logical not' - often called bang.
-*/
-
-let trueValue = true;
-let falseValue = false;
-
-if (trueValue || falseValue) {
-  console.log('it evaluated to true');
-}
 
 let username = prompt('Hey, what is your name?');
 //console.log(username);
@@ -113,4 +93,4 @@ let attemptsRemaining = 4;
 let 
 
 
-alert('Thanks for checking out my page, ' + username + '!');
+alert ('Thanks for checking out my page, ' + username + '!');
