@@ -47,12 +47,11 @@ let answer = 6;
 let tries = 4;
 let correct = false;
 while(!correct && tries >= 1){
-  let guess = parseInt(prompt('Guess a number'));
+  let guess = parseInt(prompt('Guess my favorite number. It is between 1 and 10, and you have 4 guesses.'));
   if(guess === answer){
-    alert(`You get the correct answer:    
-    ${answer}`)
+    alert(`Correct! The answer is    
+    ${answer}!`)
     correct = true;
-    // or break;
   }
   else if(tries === 1){
     alert(`You've used all your gueses, here is the correct answer:    
@@ -65,32 +64,35 @@ while(!correct && tries >= 1){
     if(guess > answer){
       alert('number too high')
     }else if(guess < answer){
-      alert('numnber too low')
+      alert('number too low')
     }
   }
 }
 
 
+let answers = ['basketball', 'snowboarding', 'ultimate frisbee'];
+let correctAnswer = false;
+
+for(let i = 6; i >= 0; i--){
+  if(i === 0){
+    alert(`Nope! Sorry, the correct options were: ${answers}`);
+    break;
+  }else{
+    let guess = prompt('Guess what my favorite sport to play is');
+    for(let j = 0; j < answers.length; j++){
+      if(guess === answers[j]){
+        correctAnswer = true;
+      }
+    }
+    if(correctAnswer === true){
+      alert('congrats!')
+      break;
+    }
+  }
+  
+}
 
 
-// Indicates through an alert if the guess is “too high” or “too low”.
-// response if too high
-// response if too low
-// response if correct
-// response if not a number
-// response if no guesses remaining
 
 
-
-// It should give the user exactly four opportunities to get the correct answer.
-
-
-// After all attempts have been exhausted, tell the user the correct answer. Consider using a loop of some sort.
-
-
-
-let attemptsRemaining = 4;
-let 
-
-
-alert ('Thanks for checking out my page, ' + username + '!');
+alert(`Thanks for checking out my page, ${username}!`);
