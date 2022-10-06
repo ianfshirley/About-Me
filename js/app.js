@@ -1,16 +1,35 @@
 'use strict';
 
 
-let username = prompt('Hey, what is your name?');
-//console.log(username);
-alert("Hi " + username + "!");
-
-let pets = prompt('Do I have any pets?').toLowerCase();
-
-if (pets === 'yes' || pets === 'y') {
-  //console.log("That's right, I have a dog named Ramen & a cat named Sushi");
-  alert("That's right, I have a dog named Ramen & a cat named Sushi");
+function getUserName() {
+  let username = prompt('Hey, what is your name?');
+  //console.log(username);
+  alert("Hi " + username + "!");
+  return username;
 }
+getUserName();
+
+// let username = getUserName();
+
+// function getUserString() {
+//   let username = prompt('Hey, what is your name?');
+//   //console.log(username);
+//   return "Hi " + username + "!";
+// }
+
+// function getUserWithArgument(question) {
+//   let username = prompt(question);
+//   //console.log(username);
+//   alert("Hi " + username + "!");
+// }
+
+  let pets = prompt('Do I have any pets?').toLowerCase();
+
+  if (pets === 'yes' || pets === 'y') {
+    //console.log("That's right, I have a dog named Ramen & a cat named Sushi");
+    alert('That\'s right, I have a dog named Ramen & a cat named Sushi');
+  }
+
 
 let siblings = prompt('Do I have any siblings?').toLowerCase();
 
