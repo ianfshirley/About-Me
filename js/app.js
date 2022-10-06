@@ -61,12 +61,15 @@ function notAllStates() {
 }
 notAllStates();
 
-let bones = prompt('Have I ever broken a bone?').toLowerCase();
+function brokenBones() {
+  let bones = prompt('Have I ever broken a bone?').toLowerCase();
 
-if (bones === 'yes' || bones === 'y') {
-  //console.log('Yes, I have broken 7 bones unfortunately');
-  alert('Yes, I have broken 7 bones unfortunately');
+  if (bones === 'yes' || bones === 'y') {
+    //console.log('Yes, I have broken 7 bones unfortunately');
+    alert('Yes, I have broken 7 bones unfortunately');
+  }
 }
+brokenBones();
 
 
 // Add a 6th question to the guessing game that takes in a numeric input by prompting the user to guess a number.
