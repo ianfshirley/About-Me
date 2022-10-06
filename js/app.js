@@ -103,27 +103,31 @@ function guessNumber() {
 }
 guessNumber();
 
-let answers = ['basketball', 'snowboarding', 'ultimate frisbee'];
-let correctAnswer = false;
-
-for(let i = 6; i >= 0; i--){
-  if(i === 0){
-    alert(`Nope! Sorry, the correct options were: ${answers}`);
-    break;
-  }else{
-    let guess = prompt('Guess what my favorite sport to play is');
-    for(let j = 0; j < answers.length; j++){
-      if(guess === answers[j]){
-        correctAnswer = true;
+function favSport() {
+  let answers = ['basketball', 'snowboarding', 'ultimate frisbee'];
+  let correctAnswer = false;
+  
+  for(let i = 6; i >= 0; i--){
+    if(i === 0){
+      alert(`Nope! Sorry, the correct options were: ${answers}`);
+      break;
+    }else{
+      let guess = prompt('Guess what my favorite sport to play is');
+      for(let j = 0; j < answers.length; j++){
+        if(guess === answers[j]){
+          correctAnswer = true;
+        }
+      }
+      if(correctAnswer === true){
+        alert('congrats!')
+        break;
       }
     }
-    if(correctAnswer === true){
-      alert('congrats!')
-      break;
-    }
+    
   }
   
 }
+favSport();
 
 
 
