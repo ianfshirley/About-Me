@@ -74,32 +74,34 @@ brokenBones();
 
 // Add a 6th question to the guessing game that takes in a numeric input by prompting the user to guess a number.
 
-let answer = 6;
-let tries = 4;
-let correct = false;
-while(!correct && tries >= 1){
-  let guess = parseInt(prompt('Guess my favorite number. It is between 1 and 10, and you have 4 guesses.'));
-  if(guess === answer){
-    alert(`Correct! The answer is    
-    ${answer}!`)
-    correct = true;
-  }
-  else if(tries === 1){
-    alert(`You've used all your gueses, here is the correct answer:    
-    ${answer}`)
-    break;
-  }
-  else{
-    tries--;
-    console.log('tries', tries);
-    if(guess > answer){
-      alert('number too high')
-    }else if(guess < answer){
-      alert('number too low')
+function guessNumber() {
+  let answer = 6;
+  let tries = 4;
+  let correct = false;
+  while(!correct && tries >= 1){
+    let guess = parseInt(prompt('Guess my favorite number. It is between 1 and 10, and you have 4 guesses.'));
+    if(guess === answer){
+      alert(`Correct! The answer is    
+      ${answer}!`)
+      correct = true;
     }
-  }
+    else if(tries === 1){
+      alert(`You've used all your gueses, here is the correct answer:    
+      ${answer}`)
+      break;
+    }
+    else{
+      tries--;
+      console.log('tries', tries);
+      if(guess > answer){
+        alert('number too high')
+      }else if(guess < answer){
+        alert('number too low')
+      }
+    }
+  }  
 }
-
+guessNumber();
 
 let answers = ['basketball', 'snowboarding', 'ultimate frisbee'];
 let correctAnswer = false;
