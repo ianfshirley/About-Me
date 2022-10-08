@@ -1,19 +1,12 @@
 'use strict';
 
-
-let username = prompt('Hey, what is your name?');
-alert("Hi " + username + "!");
-
-let pets = prompt('Do I have any pets?').toLowerCase();
+function getUserName() {
+  let username = prompt('Hey, what is your name?');
+  alert("Hi " + username + "!");
+}
+getUserName();
 
 var count = 0;
-
-if (pets === 'yes' || pets === 'y') {
-  alert("That's right, I have a dog named Ramen & a cat named Sushi");
-}
-// getUserName();
-
-let username = getUserName();
 
 function twoPets() {
   let pets = prompt('Do I have any pets?').toLowerCase();
@@ -68,8 +61,7 @@ function guessNumber() {
   while(!correct && tries >= 1){
     let guess = parseInt(prompt('Guess my favorite number. It is between 1 and 10, and you have 4 guesses.'));
     if(guess === answer){
-      alert(`Correct! The answer is    
-      ${answer}!`);
+      alert(`Correct! The answer is ${answer}!`);
       correct = true;
     }
     else if(tries === 1){
