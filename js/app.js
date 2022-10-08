@@ -15,21 +15,9 @@ if (pets === 'yes' || pets === 'y') {
 
 let username = getUserName();
 
-// function getUserString() {
-//   let username = prompt('Hey, what is your name?');
-//   //console.log(username);
-//   return "Hi " + username + "!";
-// }
-
-// function getUserWithArgument(question) {
-//   let username = prompt(question);
-//   //console.log(username);
-//   alert("Hi " + username + "!");
-// }
 function twoPets() {
   let pets = prompt('Do I have any pets?').toLowerCase();
   if (pets === 'yes' || pets === 'y') {
-    //console.log("That's right, I have a dog named Ramen & a cat named Sushi");
     alert('That\'s right, I have a dog named Ramen & a cat named Sushi');
   }
 }
@@ -39,7 +27,6 @@ function oneSister() {
   let siblings = prompt('Do I have any siblings?').toLowerCase();
 
   if (siblings === 'yes' || siblings === 'y') {
-    //console.log('Yep, I have one sister who is 2 years older than me.');
     alert('Yep, I have one sister who is 2 years older than me.');
   }
 }
@@ -49,7 +36,6 @@ function noKids() {
   let kids = prompt('Do I have any kids?').toLowerCase();
 
   if (kids === 'no' || kids === 'n') {
-    //console.log('Correct! I have 3 nephews and that's plenty!');
     alert('Correct! I have 3 nephews and that is plenty!');
   }
 }
@@ -59,7 +45,6 @@ function notAllStates() {
   let states = prompt('Do you think I have traveled to all 50 states?').toLowerCase();
 
   if (states === 'no' || states === 'n') {
-    //console.log('Not even close, more like 10 or 15');
     alert('Not even close, more like 10 or 15');
   }
 }
@@ -69,14 +54,12 @@ function brokenBones() {
   let bones = prompt('Have I ever broken a bone?').toLowerCase();
 
   if (bones === 'yes' || bones === 'y') {
-    //console.log('Yes, I have broken 7 bones unfortunately');
     alert('Yes, I have broken 7 bones unfortunately');
   }
 }
 brokenBones();
 
 
-// Add a 6th question to the guessing game that takes in a numeric input by prompting the user to guess a number.
 
 function guessNumber() {
   let answer = 6;
