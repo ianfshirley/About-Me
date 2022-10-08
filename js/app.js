@@ -1,11 +1,15 @@
 'use strict';
 
 
-function getUserName() {
-  let username = prompt('Hey, what is your name?');
-  //console.log(username);
-  alert('Hi ' + username + '!');
-  return username;
+let username = prompt('Hey, what is your name?');
+alert("Hi " + username + "!");
+
+let pets = prompt('Do I have any pets?').toLowerCase();
+
+var count = 0;
+
+if (pets === 'yes' || pets === 'y') {
+  alert("That's right, I have a dog named Ramen & a cat named Sushi");
 }
 // getUserName();
 
