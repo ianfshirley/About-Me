@@ -1,10 +1,7 @@
 'use strict';
 
-function getUserName() {
-  let username = prompt('Hey, what is your name?');
-  alert("Hi " + username + "!");
-}
-getUserName();
+let username = prompt('Hey, what is your name?');
+alert("Hi " + username + "!");
 
 var count = 0;
 
@@ -12,6 +9,7 @@ function twoPets() {
   let pets = prompt('Do I have any pets?').toLowerCase();
   if (pets === 'yes' || pets === 'y') {
     alert('That\'s right, I have a dog named Ramen & a cat named Sushi');
+    count++;
   }
 }
 twoPets();
@@ -21,6 +19,7 @@ function oneSister() {
 
   if (siblings === 'yes' || siblings === 'y') {
     alert('Yep, I have one sister who is 2 years older than me.');
+    count++;
   }
 }
 oneSister();
@@ -30,6 +29,7 @@ function noKids() {
 
   if (kids === 'no' || kids === 'n') {
     alert('Correct! I have 3 nephews and that is plenty!');
+    count++;
   }
 }
 noKids();
@@ -39,6 +39,7 @@ function notAllStates() {
 
   if (states === 'no' || states === 'n') {
     alert('Not even close, more like 10 or 15');
+    count++;
   }
 }
 notAllStates();
@@ -48,11 +49,10 @@ function brokenBones() {
 
   if (bones === 'yes' || bones === 'y') {
     alert('Yes, I have broken 7 bones unfortunately');
+    count++;
   }
 }
 brokenBones();
-
-
 
 function guessNumber() {
   let answer = 6;
@@ -63,6 +63,7 @@ function guessNumber() {
     if(guess === answer){
       alert(`Correct! The answer is ${answer}!`);
       correct = true;
+      count++;
     }
     else if(tries === 1){
       alert(`You've used all your gueses, here is the correct answer:    
@@ -98,7 +99,8 @@ function favSport() {
         }
       }
       if(correctAnswer === true){
-        alert('congrats!');
+        alert('Nice! My three favorites are basketball, snowboarding & ultimate frisbee.');
+        count++;
         break;
       }
     }
@@ -106,4 +108,5 @@ function favSport() {
 }
 favSport();
 
-alert(`Thanks for checking out my page, ${username}!`);
+alert(`Thanks for checking out my page, ${username}!
+(By the way, you got ${count} out of 7 questions correct.)`);
