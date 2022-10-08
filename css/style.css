@@ -17,6 +17,7 @@ span {
     background-color: bisque;
     border: solid;
     border-width: 5px;
+    border-color:#340404;
 }
 
 #name {
@@ -42,7 +43,8 @@ h2 {
     font-size: 20px;
     border: 10px;
     border-style: inset;
-    border-color: #88d1e0;
+    border-color: #cdf0f1;
+    border-radius: 10px;
     padding: 1em;
     margin: 50px 100px 50px 100px;
 }
@@ -75,7 +77,8 @@ ol {
     font-size: 18px;
     border: 10px;
     border-style: inset;
-    border-color: #88d1e0;
+    border-color: #cdf0f1;
+    border-radius: 10px;
     padding: 1em;
     margin: 50px 20rem 50px 20rem;
     
@@ -88,6 +91,7 @@ ol {
     border: 10px;
     border-style: inset;
     border-color: #701a1a;
+    border-radius: 10px;
     padding: 1em;
     margin: 50px 20rem 50px 20rem;
 }
@@ -99,6 +103,7 @@ ol {
     border: 10px;
     border-style: inset;
     border-color: #701a1a;
+    border-radius: 10px;
     padding: 1em;
     margin: 50px 15rem 50px 15rem;
 }
